@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew "(2014-10-22 BZR 5216)-product")
+(kicad_pcb (version 4) (host pcbnew 4.0.5)
 
   (general
     (links 86)
@@ -13,6 +13,11 @@
   )
 
   (page A4)
+  (title_block
+    (title "")
+    (company "Phoenix Robotik")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -87,7 +92,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerbers/))
+      (outputdirectory gerber/))
   )
 
   (net 0 "")

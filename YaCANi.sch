@@ -1,36 +1,40 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
+LIBS:YaCANi-rescue
 LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
 LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
 LIBS:atmel
+LIBS:audio
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
+LIBS:cypress
+LIBS:device
+LIBS:digital-audio
+LIBS:display
+LIBS:dsp
+LIBS:intel
+LIBS:interface
+LIBS:linear
+LIBS:memory
+LIBS:microchip
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:opto
+LIBS:philips
+LIBS:power
+LIBS:regul
+LIBS:siliconi
+LIBS:texas
+LIBS:transistors
 LIBS:valves
-LIBS:cantact
-LIBS:cantact-cache
+LIBS:xilinx
+LIBS:Infineon
+LIBS:Microchip
+LIBS:Panchip
+LIBS:PhoenixRobotik
+LIBS:STMicroelectronics
+LIBS:YaCANi
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -39,7 +43,7 @@ Sheet 1 1
 Title ""
 Date ""
 Rev ""
-Comp ""
+Comp "Phoenix Robotik"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1024,7 +1028,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 7100 3350 6950
 $Comp
-L CRYSTAL X1
+L Crystal X1
 U 1 1 54736BAF
 P 2200 6550
 F 0 "X1" H 2200 6700 60  0000 C CNN
