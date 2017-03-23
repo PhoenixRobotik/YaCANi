@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:YaCANi-rescue
 LIBS:74xx
 LIBS:adc-dac
 LIBS:analog_switches
@@ -35,7 +34,68 @@ LIBS:Panchip
 LIBS:PhoenixRobotik
 LIBS:STMicroelectronics
 LIBS:YaCANi
-LIBS:YaCANi-cache
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -160,12 +220,12 @@ $EndComp
 $Comp
 L +5V #PWR02
 U 1 1 546FB05A
-P 10450 2050
-F 0 "#PWR02" H 10450 2140 20  0001 C CNN
-F 1 "+5V" H 10450 2140 30  0000 C CNN
-F 2 "" H 10450 2050 60  0000 C CNN
-F 3 "" H 10450 2050 60  0000 C CNN
-	1    10450 2050
+P 10600 1600
+F 0 "#PWR02" H 10600 1690 20  0001 C CNN
+F 1 "+5V" H 10600 1750 30  0000 C CNN
+F 2 "" H 10600 1600 60  0000 C CNN
+F 3 "" H 10600 1600 60  0000 C CNN
+	1    10600 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1131,4 +1191,21 @@ Wire Wire Line
 	7850 4000 9100 4000
 Wire Wire Line
 	7850 4200 7900 4200
+$Comp
+L Polyfuse F?
+U 1 1 58D3E875
+P 10600 1850
+F 0 "F?" V 10500 1850 50  0000 C CNN
+F 1 "Polyfuse" V 10700 1850 50  0000 C CNN
+F 2 "" H 10650 1650 50  0001 L CNN
+F 3 "" H 10600 1850 50  0001 C CNN
+	1    10600 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 2050 10600 2050
+Wire Wire Line
+	10600 2050 10600 2000
+Wire Wire Line
+	10600 1700 10600 1600
 $EndSCHEMATC
