@@ -1046,13 +1046,13 @@ F 3 "" H 2350 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6200 3200 2    60   Input ~ 0
-LED_2
+LED_ACT
 Text GLabel 6200 3100 2    60   Input ~ 0
-LED_1
+LED_PWR
 Text GLabel 6250 6650 1    60   Input ~ 0
-LED_1
+LED_PWR
 Text GLabel 5800 6650 1    60   Input ~ 0
-LED_2
+LED_ACT
 $Comp
 L GND #PWR?
 U 1 1 58D4A494
