@@ -413,7 +413,7 @@ U 1 1 5472CC61
 P 8300 1700
 F 0 "P1" H 8300 2000 50  0000 C CNN
 F 1 "SWD" V 8400 1700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" H 8300 1700 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 8300 1700 60  0001 C CNN
 F 3 "" H 8300 1700 60  0000 C CNN
 	1    8300 1700
 	1    0    0    -1  
@@ -964,4 +964,6 @@ Wire Wire Line
 	10150 3350 10250 3350
 Wire Wire Line
 	10250 3350 10250 3500
+Connection ~ 2350 6950
+Connection ~ 1200 6950
 $EndSCHEMATC
