@@ -96,6 +96,7 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
+LIBS:YaCANi-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -493,21 +494,6 @@ F 3 "" H 9400 5600 60  0000 C CNN
 	1    9400 5600
 	1    0    0    -1  
 $EndComp
-Text Label 2150 5150 2    60   ~ 0
-CAN_RX
-Text Label 2150 5300 2    60   ~ 0
-CAN_TX
-$Comp
-L +5V #PWR016
-U 1 1 54735423
-P 2000 5000
-F 0 "#PWR016" H 2000 5090 20  0001 C CNN
-F 1 "+5V" V 1950 5050 30  0000 C CNN
-F 2 "" H 2000 5000 60  0000 C CNN
-F 3 "" H 2000 5000 60  0000 C CNN
-	1    2000 5000
-	0    1    1    0   
-$EndComp
 $Comp
 L +3.3V #PWR017
 U 1 1 54736133
@@ -518,41 +504,6 @@ F 2 "" H 4200 1000 60  0000 C CNN
 F 3 "" H 4200 1000 60  0000 C CNN
 	1    4200 1000
 	1    0    0    -1  
-$EndComp
-Text Notes 1000 4700 0    197  ~ 39
-Test Points
-$Comp
-L TEST TP1
-U 1 1 58D0433A
-P 1750 5000
-F 0 "TP1" H 1750 5300 50  0000 C BNN
-F 1 "5V" V 1750 5200 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1750 5000 50  0001 C CNN
-F 3 "" H 1750 5000 50  0001 C CNN
-	1    1750 5000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TEST TP2
-U 1 1 58D043A3
-P 1750 5150
-F 0 "TP2" H 1750 5450 50  0000 C BNN
-F 1 "CAN_Rx" V 1750 5300 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1750 5150 50  0001 C CNN
-F 3 "" H 1750 5150 50  0001 C CNN
-	1    1750 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TEST TP3
-U 1 1 58D04406
-P 1750 5300
-F 0 "TP3" H 1750 5600 50  0000 C BNN
-F 1 "CAN_Tx" V 1750 5450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1750 5300 50  0001 C CNN
-F 3 "" H 1750 5300 50  0001 C CNN
-	1    1750 5300
-	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR018
@@ -867,12 +818,6 @@ Wire Wire Line
 	7800 1900 8100 1900
 Wire Wire Line
 	4200 1000 4200 2100
-Wire Wire Line
-	1750 5000 2000 5000
-Wire Wire Line
-	1750 5300 2150 5300
-Wire Wire Line
-	1750 5150 2150 5150
 Wire Wire Line
 	4050 2700 4300 2700
 Wire Wire Line
