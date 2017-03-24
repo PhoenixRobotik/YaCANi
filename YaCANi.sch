@@ -310,9 +310,9 @@ Text Label 6150 2500 2    60   ~ 0
 SWDIO
 Text Label 6150 2600 2    60   ~ 0
 SWCLK
-Text Label 8900 3650 0    60   ~ 0
-CAN_RX
 Text Label 8900 3750 0    60   ~ 0
+CAN_RX
+Text Label 8900 3650 0    60   ~ 0
 CAN_TX
 $Comp
 L GND #PWR09
@@ -648,9 +648,9 @@ F 3 "" H 9100 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9250 1550
-Text GLabel 10250 3750 2    60   Input ~ 0
-CAN_L
 Text GLabel 10250 3950 2    60   Input ~ 0
+CAN_L
+Text GLabel 10250 3750 2    60   Input ~ 0
 CAN_H
 $Comp
 L Jumper_NC_Dual JP2
