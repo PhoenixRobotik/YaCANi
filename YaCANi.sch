@@ -373,13 +373,13 @@ $EndComp
 $Comp
 L R R1
 U 1 1 5472656A
-P 10500 5850
-F 0 "R1" V 10580 5850 40  0000 C CNN
-F 1 "120" V 10507 5851 40  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10430 5850 30  0001 C CNN
-F 3 "" H 10500 5850 30  0000 C CNN
-F 4 "MCR03ERTF1200" H 10500 5850 60  0001 C CNN "MPN"
-	1    10500 5850
+P 10500 5600
+F 0 "R1" V 10580 5600 40  0000 C CNN
+F 1 "120" V 10507 5601 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10430 5600 30  0001 C CNN
+F 3 "" H 10500 5600 30  0000 C CNN
+F 4 "MCR03ERTF1200" H 10500 5600 60  0001 C CNN "MPN"
+	1    10500 5600
 	0    1    1    0   
 $EndComp
 Text Label 7800 1800 0    60   ~ 0
@@ -614,10 +614,10 @@ F 3 "" H 10850 5850 50  0001 C CNN
 	1    10850 5850
 	0    1    1    0   
 $EndComp
-NoConn ~ 10850 5600
-Text GLabel 10200 5850 0    60   Input ~ 0
+NoConn ~ 10850 6100
+Text GLabel 10200 5600 0    60   Input ~ 0
 CAN_H
-Text GLabel 10200 6100 0    60   Input ~ 0
+Text GLabel 10200 5850 0    60   Input ~ 0
 CAN_L
 Text GLabel 4300 3300 0    60   Input ~ 0
 BOOT0
@@ -792,11 +792,9 @@ $EndComp
 Text Notes 2500 2000 0    39   ~ 0
 decoupling capacitors
 Wire Wire Line
-	10350 5850 10200 5850
+	10350 5600 10200 5600
 Wire Wire Line
-	10650 5850 10750 5850
-Wire Wire Line
-	10200 6100 10850 6100
+	10650 5600 10850 5600
 Wire Wire Line
 	9100 1850 9100 2000
 Wire Wire Line
@@ -870,7 +868,7 @@ Wire Wire Line
 	10400 1700 10000 1700
 Connection ~ 4250 4400
 Wire Wire Line
-	4300 4300 4250 4300
+	4250 4300 4300 4300
 Wire Wire Line
 	4250 4100 4250 4500
 Wire Wire Line
@@ -879,7 +877,7 @@ Connection ~ 9050 5850
 Wire Wire Line
 	8750 5850 9300 5850
 Wire Wire Line
-	1350 6950 1100 6950
+	1100 6950 1350 6950
 Wire Wire Line
 	2150 6950 2450 6950
 Wire Wire Line
@@ -911,4 +909,6 @@ Wire Wire Line
 	10250 3350 10250 3500
 Connection ~ 2350 6950
 Connection ~ 1200 6950
+Wire Wire Line
+	10200 5850 10750 5850
 $EndSCHEMATC
